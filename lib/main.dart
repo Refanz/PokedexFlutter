@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pokeverse/pages/main_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,8 +10,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return MaterialApp(
+      title: 'Pokeverse',
+      theme: ThemeData(),
+      home: const MainScreen(),
+      debugShowCheckedModeBanner: false,
+    );
   }
 }
 

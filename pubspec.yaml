@@ -52,11 +52,19 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  assets:
+    - images/
+
+  fonts:
+    - family: Pokemon
+      fonts:
+        - asset: fonts/Pokemon/Pokemon-Solid.ttf
+        - asset: fonts/Roboto/Roboto-Regular.ttf
 
   # To add assets to your application, add an assets section, like this:
   # assets:
