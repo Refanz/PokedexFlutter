@@ -19,7 +19,7 @@ class DetailMobilePage extends StatelessWidget {
     );
 
     return Scaffold(
-      backgroundColor: Colors.white24,
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
