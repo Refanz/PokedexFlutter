@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pokeverse/components/detail_mobile_page.dart';
 import 'package:pokeverse/model/pokemon.dart';
 
 class DetailScreen extends StatelessWidget {
@@ -9,7 +10,10 @@ class DetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return LayoutBuilder(
+      builder: (BuildContext context, BoxConstraints constraints) {
+          return DetailMobilePage(pokemon: pokemon);
+      },
+    );
   }
 }

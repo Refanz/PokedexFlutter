@@ -5,7 +5,9 @@ import 'package:pokeverse/pages/detail_screen.dart';
 import '../model/pokemon.dart';
 
 class PokemonList extends StatelessWidget {
-  const PokemonList({Key? key}) : super(key: key);
+  final List<Pokemon> myPokemon;
+
+  const PokemonList({Key? key, required this.myPokemon}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +15,7 @@ class PokemonList extends StatelessWidget {
       padding: const EdgeInsets.all(10.0),
       child: ListView.builder(
         itemBuilder: (context, index) {
-          final Pokemon pokemon = pokemonList[index];
+          final Pokemon pokemon = myPokemon[index];
 
           const textPokemon = TextStyle(
             fontSize: 20,
@@ -69,7 +71,7 @@ class PokemonList extends StatelessWidget {
             ),
           );
         },
-        itemCount: pokemonList.length,
+        itemCount: myPokemon.length,
       ),
     );
   }
